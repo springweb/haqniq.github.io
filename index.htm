@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>哈尼族多媒体数据库</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script language="javascript" src="statics/js/swfobject.js"></script>
+<script type="text/javascript" src="statics/js/jquery-1.7.2.js"></script>
+<style type="text/css">
+  body{background:#A5C8CA;}
+ 	*{margin:0px;padding:0px;}
+	.main{
+    position:absolute;left:50%;top:50%;
+    background:url(flash/loading.gif) center center no-repeat;
+	}
+</style>
+</head>
+<body>
+ <div class="main"><span id="myplayer"></span></div>
+</body>
+<script type="text/javascript">
+function hideLd(){
+  $(".main").css("background-image","none");
+}
+function sizeDiv(){
+	var ww=1600,wh=720,flash="main.swf";
+  if($(window).width()<=1024){
+     ww=1020;wh=700;flash="main_small.swf";
+  }
+
+	$(".main").css({
+		              'background-image':"url(flash/loading.gif)",
+		              'width':ww+"px",'height':wh+"px",
+		              'margin-left':(-(ww*0.5))+"px",'margin-top':(-(wh*0.5))+"px"
+		             });
+	swfobject.embedSWF(flash, "myplayer",ww,wh,"9.0.0", "expressInstall.swf",{},{"wmode":"transparent"});
+}
+
+sizeDiv();
+$(window).resize(function(){
+	sizeDiv();
+});
+</script>
+</html>

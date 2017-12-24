@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ <main bg="background.swf" path="flash/main/" music="flash/music/amiche.mp3">
+ 	<item na="文字动画">words.swf</item>
+	<item na="信仰">belief.swf</item>
+	<item na="服饰">dress.swf</item>
+	<item na="节庆">festival.swf</item>
+	<item na="民居">houses.swf</item>
+	<item na="民俗">folklore.swf</item>
+	<item na="神话">myth.swf</item>
+	<item na="手工">manual.swf</item>
+	<item na="舞蹈">dance.swf</item>
+ </main>
+ <index path="flash/default/"  music="flash/music/aba.mp3">
+ 	<item na="银盘" tgt="loaderMc" fl="index"/>
+ 	<item na="背景" tgt="bgMc" fl="background" />
+ 	<item na="大树及文字" tgt="treeMc" fl="tree" />
+	<item na="民族概况" fl="overview"  url="/haqniq/overview/"/>
+	<item na="神话传说" fl="myth"  url="/haqniq/myth/"/>
+	<item na="宗教信仰" fl="belief"  url="/haqniq/belief/"/>
+	<item na="语言文字" fl="language"  url="/haqniq/language/"/>
+	<item na="民居建筑" fl="houses"  url="/haqniq/houses/"/>
+	<item na="民族服饰" fl="dress"  url="/haqniq/dress/"/>
+	<item na="民俗风物" fl="scenery"  url="/haqniq/scenery/"/>
+	<item na="歌舞乐器" fl="dance"  url="/haqniq/dance/"/>
+	<item na="节庆婚俗" fl="festival"  url="/haqniq/festival/"/>
+	<item na="手工技艺" fl="manual"  url="/haqniq/manual/"/>
+	<item na="民族医药" fl="medicine"  url="/haqniq/medicine/"/>
+	<item na="重要人物" fl="person"  url="/haqniq/person/"/>
+	<item na="哈尼梯田" fl="terrace"  url="/haqniq/terrace/"/>
+	<item na="国际阿卡" fl="aka"  url="/haqniq/aka/"/>
+ </index>
+</root>

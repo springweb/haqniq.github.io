@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body div,body textarea{
+	scrollbar-face-color: #babac4;scrollbar-highlight-color: #c1c1bb;
+	scrollbar-shadow-color: #c1c1bb;scrollbar-3dlight-color: #ebebe4;
+	scrollbar-arrow-color: #cacab7;scrollbar-track-color: #e5e5e7;
+	scrollbar-darkshadow-color: #ebebe4;
+}
+/* 常规样式 */
+body{margin:0px;padding:0px;text-align:center;font-size:12px; background:url(../images/haqniq/body_back.jpg) top repeat-x; background-color:#030820;}
+a{text-decoration:none;color:#FFF; cursor:pointer}
+a:hover{color:#C60; text-decoration:none;cursor:pointer}
+ul,form,li,div{margin:0px;padding:0px;list-style:none;}
+p{font-weight:normal;line-height:normal;font-size:12px;margin:0px;padding:0px;}
+img{border:0px; display:block;}
+hr{display:block;border:none;margin:0px;padding:0px;font-size:0px;}
+/*常用兼容DIV样式*/
+.clear{clear:both;}
+.float{float:left;}
+.over-hide{overflow:hidden;white-space: nowrap;-o-text-overflow: ellipsis;text-overflow: ellipsis;}
+.main{width:1020px;margin:0 auto; padding:0px;}
+.main_in{width:1020px; height:700px;float:left; background-color:#FFF; overflow:hidden}
+
+/*头和底部*/
+.head{ width:1020px; height:26px;padding-top:3px; float:left; font-size:12px; font-family:"楷体_GB2312"; color:#FFF; line-height:26px; text-align:center; background:url(../images/haqniq/top_back.jpg) top no-repeat}
+.bottom{ width:1020px; height:28px; float:left; font:12px; line-height:25px; font-family:"宋体"; color:#FFF; background:url(../images/haqniq/bottom_back.jpg) top no-repeat}/*中部分*/
+
+
+/*hani_DB ------------------------内容页面↓------------------------------------------------------------*/
+		/*树形菜单*/
+		.w_v_menu{ width:215px; height:290px; float:left; margin-top:27px; overflow:hidden}
+
+		/*搜索框*/
+		.space2{width:20px; height:120px; float:left; overflow:hidden}
+		.list_search{width:191px;height:115px; float:left; margin-top:15px; background:url(../images/haqniq/search.png) left no-repeat ; _background-image:none; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/statics/images/haqniq/search.png');}
+			.search_select{ width:82px; height:20px; float:left; _display:inline; margin-left:80px; margin-top:8px; _position:relative;}
+			.search_text{ width:155px; height:25px; float:left; _display:inline; margin-left:16px; margin-top:8px; text-align:left;_position:relative;}
+			.search_text input{border:1px solid #7f9db9;width:100px;}
+			.search_but{ width:110px; height:20px; float:left; _display:inline; margin-top:15px; margin-left:40px;_position:relative;}
+			.search_but a{ display:block; width:108px; height:18px; line-height:18px; color:#FF0;cursor:pointer;background:url(../images/haqniq/search_but.png) left no-repeat ; _background-image:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/statics/images/haqniq/search_but.png');}
+			.search_but a:hover{display:block; width:108px; height:18px;background:url(../images/haqniq/search_but_up.png) left no-repeat ; _background-image:none; filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/statics/images/haqniq/search_but_up.png');}
+
+
+/*视频列表 video_list*/
+.video_list_top_pic{ width:1020px; height:155px; float:left; background:url(../images/haqniq/cont_list_s.jpg) top left no-repeat}
+	.cont_top_title{width:184px; height:27px; float:left; margin-top:118px;_display:inline;margin-left:819px;}
+
+.video_list_center{ width:1020px; height:490px; float:left;}
+	/*树形菜单*/
+	.cont_left{ width:217px; height:490px; float:left; background:url(../images/haqniq/cont_list_03.jpg) top left no-repeat}
+		.cont_menu{ width:217px; height:290px; float:left; margin-top:27px; overflow:hidden}
+
+		/*树形菜单内部DIV和ul*/
+		.bigdiv{width:170px; height:270px; float:left; margin-top:10px; _display:inline; margin-left:35px; overflow:hidden; }
+		.menudiv{height:270px;width:170px; float:left;}
+			/*树形菜单开始-----↓---*/
+			.titlediv{float:left;width:151px; height:20px; line-height:20px; text-indent:2em; background:url(../images/haqniq/li_totle.jpg) no-repeat left;}
+			.menu_ul{float:left;width:152px;margin-left:4px;_margin-left:2px;height:250px;border-left:1px #666 dashed;overflow-x:hidden;overflow-y:auto;}
+			.menu_ul ul{display:inline;}
+			.menu_ul p,.menu_ul li{margin:0px;padding:0;}
+
+			.menu_ul .menu_tl{ float:left; display:block;width:110px;padding-left:40px;height:20px;line-height:20px;text-align:left;background:url(../images/haqniq/li_subject.jpg) left top no-repeat}
+			.menu_ul .menu_sub{width:150px;float:left;display:none;}
+			.menu_sub  p{clear:both;display:block;height:18px;line-height:14px;text-align:left; text-indent:4.5em;background:url(../images/haqniq/li_ince.jpg) left top no-repeat}
+			.menu_ul a{ text-decoration:none;color:#151b55}
+			.menu_ul a:hover{background-color:#d2d2db; color:#00F}
+		   /*树形菜单 THE END----↑---*/
+		.space2{width:20px; height:120px; float:left; overflow:hidden}
+	/*中间列表*/
+	.cont_list{ width:803px; height:490px; float:left; background:url(../images/haqniq/cont_list_sbg.jpg) top left no-repeat}
+		/*主标题*/
+		.cont_list_title{ width:700px; height:21px;line-height:21px; float:left; _display:inline; margin-left:53px; margin-top:1px;text-align:left;}
+		.cont_list_title a{color:#666;}.cont_list_title a:hover{color:#a00;}
+		.cont_list_title .tl{float:left;}
+    .cont_list_title .return{float:right;}
+		.cont_list .kw{color:red;}
+		.cont_list_cnt{ width:725px;padding-left:35px; height:420px; float:left;}
+    .cont_list_page{ width:700px; height:21px;line-height:21px;float:left; _display:inline; margin-left:53px;_margin-top:-4px;}
+    .cont_list_page a{color:#333;}
+    .cont_list_page a:hover{color:#151b55}
+ /*查看文档内容页 document_read*/
+.document_read{ width:715px; height:425px;padding:2px 5px 0 5px;float:left;_display:inline;overflow:hidden}
+.document_read,.document_read p{font-size:12px;text-indent:2em; font-family:"宋体"; line-height:21px; color:#161c55; text-align:left;font-weight:normal;}
+
+/*搜索样式*/
+.s_list .s_thumb{width:115px;height:70px;border:1px solid #c1c5d1;padding:1px;float:left;margin-right:7px;text-align:center;overflow:hidden;}
+.s_list .s_thumb img{margin:auto;height:70px;}
+.s_list li{width:725px;height:74px;float:left;padding:5px 0}
+.s_list .no_thumb{width:715px;height:74px;float:left;padding:5px 0 5px 10px;}
+.s_list li span a{color:#333;}
+.s_list li span a:hover{color:#c60;}
+.s_list li a{color:#c60;}
+.s_list li a:hover{color:#660;}
+
+.s_list li h4{margin:0px;padding:0px;text-align:left;font-size:12px;font-weight:normal;line-height:19px;}
+.s_list li h4 span{float:right;*margin-top:-20px;}
+.s_list li p{text-align:left;line-height:20px;color:#555;}
+
+/*分页系列样式*/
+.page_info,.page_pre,.page_cur,.page_no,.page_next,.page_dot{display:inline-block;height:16px;border:1px solid #d1cccc;line-height:16px;}
+.page_info{display:none;width:35px;}
+.page_pre{width:45px;}
+.page_cur{width:20px;color:#fff;background:#515151}
+.page_no{width:20px;}
+.page_next{width:45px;}
+.page_none{color:#999;cursor:default;}
+.page_dot{border:none;}
+
+
+/*内页flash胸牌*/
+.cont_flash{width:55px; height:55px; float:left;margin-left:35px; margin-top:35px; _display:inline;}
+
+
+
+
+
+
+
+
+
+
